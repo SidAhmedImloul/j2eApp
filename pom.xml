@@ -4,6 +4,7 @@
 	<groupId>sid</groupId>
 	<artifactId>j2eapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,6 +41,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
 			<plugin>
